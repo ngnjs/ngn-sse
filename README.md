@@ -4,6 +4,8 @@ A server-sent events implementation for node.js. Adapted from [einaros/sse.js](h
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
+[![Code Climate](https://codeclimate.com/github/ngnjs/ngn-sse/badges/gpa.svg)](https://codeclimate.com/github/ngnjs/ngn-sse)
+
 ## Install
 
 `npm install ngn-sse`

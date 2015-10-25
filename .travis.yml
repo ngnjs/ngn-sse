@@ -11,4 +11,4 @@ notifications:
     format: html
 addons:
   code_climate:
-    repo_token: XXX
+    repo_token: b762a4fe324e678eb8e464402015eac6fcabd64c71d3de13ff671b6c5853b0f4

@@ -12,11 +12,7 @@
   },
   "keywords": [
     "ngn",
-    "bridge",
-    "message",
-    "queue",
-    "event",
-    "bus"
+    "sse"
   ],
   "author": "Corey Butler",
   "license": "MIT",

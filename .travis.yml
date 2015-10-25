@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- '4.2.1'
+sudo: false
+notifications:
+  hipchat:
+    rooms:
+      secure: G86agoGJWFpnW+DIwoY0iZjTi4858qgZUnVSFKkz39zfeIFm/lnmcBG3MqLMzvkjFrj+qoofqAUUbycvA8ZE7FbX6+rOfChPpco14LM/cPWrltNuLEYGHA5ikLTrGXOQpy6HFx0MFxhDQc5GFZWoNOVZb8bRogyv1PZwS2AG7tQ=
+    template:
+    - '%{repository}#%{build_number} (%{branch} - %{commit} : %{author}): %{message}'
+    format: html
+addons:
+  code_climate:
+    repo_token: XXX

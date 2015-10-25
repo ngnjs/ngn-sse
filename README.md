@@ -47,7 +47,7 @@ Options for `client.send`:
 
 ## Basic Client
 
-```html
+```js
 var es = new EventSource("/sse")
 
 // Handle any message

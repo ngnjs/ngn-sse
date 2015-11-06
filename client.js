@@ -20,12 +20,15 @@ class SSEClient {
 
   initialize () {
     this.req.socket.setNoDelay(true)
+    
+    let origin = this.req.headers.referer !== undefined ? require('url').parse(this.req.headers.referer) : '*'
+    origin = typeof origin === 'object' ? origin.protocol + '\/\/' + origin.host : origin
 
     this.res.writeHead(200, {
       'Content-Type': 'text/event-stream',
       'Cache-Control': 'no-cache',
       'Connection': 'keep-alive',
-      'Access-Control-Allow-Origin': process.env.ALLOW_ORIGIN || '*'
+      'Access-Control-Allow-Origin': process.env.ALLOW_ORIGIN || origin
     })
 
     this.res.write(':ok\n\n')

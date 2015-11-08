@@ -1,6 +1,6 @@
 {
   "name": "ngn-sse",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Server Side Event (SSE) system for node.js",
   "main": "index.js",
   "scripts": {
@@ -20,10 +20,6 @@
     "url": "https://github.com/ngnjs/ngn-sse/issues"
   },
   "homepage": "https://github.com/ngnjs/ngn-sse#readme",
-  "dependencies": {
-    "ngn": "^0.2.67",
-    "options": "0.0.6"
-  },
   "devDependencies": {
     "babel-eslint": "^4.1.3",
     "eventsource": "^0.1.6",
@@ -39,5 +35,8 @@
       "_*",
       "_**/*"
     ]
+  },
+  "dependencies": {
+    "options": "0.0.6"
   }
 }

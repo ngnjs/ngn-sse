@@ -24,7 +24,8 @@ test('Setup Server', function (t) {
     t.ok(true, 'SSE applied to server.')
 
     sse.on('connection', function (client) {
-      t.ok(true, 'Client connection established.')
+      t.pass('Client connection established.')
+
       client.send({
         event: 'test',
         data: {
@@ -33,7 +34,7 @@ test('Setup Server', function (t) {
       })
 
       client.on('end', function () {
-        t.ok(true, 'Client closed successfully.')
+        t.pass('Client closed successfully.')
       })
 
       client.close()

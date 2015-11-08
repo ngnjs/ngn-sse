@@ -20,7 +20,7 @@ class SSEClient {
 
   initialize () {
     this.req.socket.setNoDelay(true)
-    
+
     let origin = this.req.headers.referer !== undefined ? require('url').parse(this.req.headers.referer) : '*'
     origin = typeof origin === 'object' ? origin.protocol + '\/\/' + origin.host : origin
 
